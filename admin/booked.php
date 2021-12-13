@@ -18,11 +18,11 @@ while($row = $room->fetch_assoc()){
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th>#</th>
-								<th>Category</th>
-								<th>Reference</th>
-								<th>Status</th>
-								<th>Action</th>
+								<th>Id</th>
+								<th>Categoria</th>
+								<th>Referencias</th>
+								<th>Estatus</th>
+								<th>Accion</th>
 							</thead>
 							<tbody>
 								<?php 
@@ -34,9 +34,9 @@ while($row = $room->fetch_assoc()){
 									<td class="text-center"><?php echo $i++ ?></td>
 									<td class="text-center"><?php echo $cat_arr[$row['booked_cid']]['name'] ?></td>
 									<td class=""><?php echo $row['ref_no'] ?></td>
-										<td class="text-center"><span class="badge badge-warning">Booked</span></td>
+										<td class="text-center"><span class="badge badge-warning">Reservada</span></td>
 									<td class="text-center">
-											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">View</button>
+											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">Ver</button>
 									</td>
 								</tr>
 							<?php endwhile; ?>

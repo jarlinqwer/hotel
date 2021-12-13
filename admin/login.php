@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Admin | Hotel Management System</title>
+  <title>Admin | The Linces</title>
  	
 
 <?php include('./header.php'); ?>
@@ -85,11 +85,11 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
   				<div class="card-body">
   					<form id="login-form" >
   						<div class="form-group">
-  							<label for="username" class="control-label">Username</label>
+  							<label for="username" class="control-label">Usuario</label>
   							<input type="text" id="username" name="username" class="form-control">
   						</div>
   						<div class="form-group">
-  							<label for="password" class="control-label">Password</label>
+  							<label for="password" class="control-label">Contraseña</label>
   							<input type="password" id="password" name="password" class="form-control">
   						</div>
   						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button></center>

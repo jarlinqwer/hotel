@@ -9,20 +9,20 @@
 			<form action="" id="manage-category">
 				<div class="card">
 					<div class="card-header">
-						    Room Category Form
+					Formulario de categoría de habitación
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label class="control-label">Category</label>
+								<label class="control-label">Categoria</label>
 								<input type="text" class="form-control" name="name">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Price</label>
+								<label class="control-label">Precio</label>
 								<input type="number" class="form-control text-right" name="price" step="any">
 							</div>
 							<div class="form-group">
-								<label for="" class="control-label">Image</label>
+								<label for="" class="control-label">Imagen</label>
 								<input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
 							</div>
 							<div class="form-group">
@@ -34,7 +34,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
-								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-category').get(0).reset()"> Cancel</button>
+								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-category').get(0).reset()"> Cancelar</button>
 							</div>
 						</div>
 					</div>
@@ -50,10 +50,10 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
-									<th class="text-center">Img</th>
-									<th class="text-center">Room</th>
-									<th class="text-center">Action</th>
+									<th class="text-center">Id</th>
+									<th class="text-center">Imagen</th>
+									<th class="text-center">Habitacion</th>
+									<th class="text-center">Accion</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -70,12 +70,12 @@
 										<img src="<?php echo isset($row['cover_img']) ? '../assets/img/'.$row['cover_img'] :'' ?>" alt="" id="cimg">
 									</td>
 									<td class="">
-										<p>Name : <b><?php echo $row['name'] ?></b></p>
-										<p>Price : <b><?php echo "$".number_format($row['price'],2) ?></b></p>
+										<p>Nombre : <b><?php echo $row['name'] ?></b></p>
+										<p>Precio : <b><?php echo "$".number_format($row['price'],2) ?></b></p>
 									</td>
 									<td class="text-center">
 										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-price="<?php echo $row['price'] ?>" data-cover_img="<?php echo $row['cover_img'] ?>">Edit</button>
-										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
+										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Borrar</button>
 									</td>
 								</tr>
 								<?php endwhile; ?>
@@ -149,7 +149,7 @@
 		end_load()
 	})
 	$('.delete_cat').click(function(){
-		_conf("Are you sure to delete this category?","delete_cat",[$(this).attr('data-id')])
+		_conf("Estas Seguro de borrar esta categoria?","delete_cat",[$(this).attr('data-id')])
 	})
 	function delete_cat($id){
 		start_load()
@@ -159,7 +159,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Borrado Exitosamente",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)

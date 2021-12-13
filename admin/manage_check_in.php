@@ -27,7 +27,7 @@ while($row = $cat->fetch_assoc()){
 		 ?>
 
 		<div class="form-group">
-			<label for="name">Room</label>
+			<label for="name">Habitacion</label>
 			<select name="rid" id="" class="custom-select browser-default">
 				
 				<?php while($row=$rooms->fetch_assoc()): ?>
@@ -43,23 +43,23 @@ while($row = $cat->fetch_assoc()){
 
 
 		<div class="form-group">
-			<label for="name">Name</label>
+			<label for="name">Nombre</label>
 			<input type="text" name="name" id="name" class="form-control" value="<?php echo isset($meta['name']) ? $meta['name']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="contact">Contact #</label>
+			<label for="contact">Contactos </label>
 			<input type="text" name="contact" id="contact" class="form-control" value="<?php echo isset($meta['contact_no']) ? $meta['contact_no']: '' ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="date_in">Check-in Date</label>
+			<label for="date_in">Comprobar en la fecha</label>
 			<input type="date" name="date_in" id="date_in" class="form-control" value="<?php echo isset($meta['date_in']) ? date("Y-m-d",strtotime($meta['date_in'])): date("Y-m-d") ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="date_in_time">Check-in Date</label>
+			<label for="date_in_time">Comprobar en la fecha</label>
 			<input type="time" name="date_in_time" id="date_in_time" class="form-control" value="<?php echo isset($meta['date_in']) ? date("H:i",strtotime($meta['date_in'])): date("H:i") ?>" required>
 		</div>
 		<div class="form-group">
-			<label for="days">Days of Stay</label>
+			<label for="days">Días de estancia</label>
 			<input type="number" min ="1" name="days" id="days" class="form-control" value="<?php echo isset($meta['date_in']) ? $calc_days: 1 ?>" required>
 		</div>
 	</form>

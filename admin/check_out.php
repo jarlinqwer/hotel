@@ -18,12 +18,12 @@ while($row = $room->fetch_assoc()){
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th>#</th>
-								<th>Category</th>
-								<th>Room</th>
-								<th>Reference</th>
-								<th>Status</th>
-								<th>Action</th>
+								<th>Id</th>
+								<th>Categoria</th>
+								<th>Habitaciones</th>
+								<th>Referencias</th>
+								<th>Estatus</th>
+								<th>Accion</th>
 							</thead>
 							<tbody>
 								<?php 
@@ -37,12 +37,12 @@ while($row = $room->fetch_assoc()){
 									<td class=""><?php echo $room_arr[$row['room_id']]['room'] ?></td>
 									<td class=""><?php echo $row['ref_no'] ?></td>
 									<?php if($row['status'] == 1): ?>
-										<td class="text-center"><span class="badge badge-warning">Checked-IN</span></td>
+										<td class="text-center"><span class="badge badge-warning">Registrado</span></td>
 									<?php else: ?>
-										<td class="text-center"><span class="badge badge-success">Checked-Out</span></td>
+										<td class="text-center"><span class="badge badge-success">Controlado</span></td>
 									<?php endif; ?>
 									<td class="text-center">
-											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">View</button>
+											<button class="btn btn-sm btn-primary check_out" type="button" data-id="<?php echo $row['id'] ?>">Vista</button>
 									</td>
 								</tr>
 							<?php endwhile; ?>
