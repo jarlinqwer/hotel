@@ -8,7 +8,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-end mb-4" style="background: #0000002e;">
-                    	 <h1 class="text-uppercase text-white font-weight-bold">Rooms</h1>
+                    	 <h1 class="text-uppercase text-white font-weight-bold">Habitaciones</h1>
                         <hr class="divider my-4" />
                     </div>
                     
@@ -25,16 +25,16 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 									<form action="index.php?page=list" id="filter" method="POST">
 			        					<div class="row">
 			        						<div class="col-md-3">
-			        							<label for="">Chech-in Date</label>
+			        							<label for="">Dia de Ingreso</label>
 			        							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
-			        							<label for="">Chech-out Date</label>
+			        							<label for="">Dia de Salida</label>
 			        							<input type="text" class="form-control datepicker" name="date_out" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>">
 			        						</div>
 			        						<div class="col-md-3">
 			        							<br>
-			        							<button class="btn-btn-block btn-primary mt-3">Check Availability</button>
+			        							<button class="btn-btn-block btn-primary mt-3">Check Disponibilidad</button>
 			        						</div>
 
 			        					</div>

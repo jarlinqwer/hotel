@@ -9,17 +9,29 @@
                     				<form action="index.php?page=list" id="filter" method="POST">
                     					<div class="row">
                     						<div class="col-md-3">
+<<<<<<< HEAD
                     							<label for="">Comprobar en la fecha</label>
                     							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off">
                     						</div>
                     						<div class="col-md-3">
                     							<label for="">Dia de Salida</label>
+=======
+                    							<label for="">Fecha de Ingreso</label>
+                    							<input type="text" class="form-control datepicker" name="date_in" autocomplete="off">
+                    						</div>
+                    						<div class="col-md-3">
+                    							<label for="">Fecha de Salida</label>
+>>>>>>> a233d01b935ea32fcd7d59210eb67ce80d1a277b
                     							<input type="text" class="form-control datepicker" name="date_out" autocomplete="off">
                     						</div>
                     						
                     						<div class="col-md-3">
                     							<br>
+<<<<<<< HEAD
                     							<button class="btn-btn-block btn-primary mt-3">Consultar disponibilidad</button>
+=======
+                    							<button class="btn-btn-block btn-primary mt-3">Comprobar Disponibilidad</button>
+>>>>>>> a233d01b935ea32fcd7d59210eb67ce80d1a277b
                     						</div>
 
                     					</div>
