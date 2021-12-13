@@ -19,7 +19,7 @@
                     						
                     						<div class="col-md-3">
                     							<br>
-                    							<button class="btn-btn-block btn-primary mt-3">Check Availability</button>
+                    							<button class="btn-btn-block btn-primary mt-3">Comprobar Disponibilidad</button>
                     						</div>
 
                     					</div>
