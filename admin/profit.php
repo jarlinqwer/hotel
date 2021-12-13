@@ -11,7 +11,7 @@ if(!isset($_SESSION["user"]))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+    <title>HOTEL THE LINCES</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -36,7 +36,7 @@ if(!isset($_SESSION["user"]))
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Navegador</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -50,12 +50,12 @@ if(!isset($_SESSION["user"]))
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> Perfil de Usuario</a>
                         </li>
-                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Ajustes</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -69,23 +69,23 @@ if(!isset($_SESSION["user"]))
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="home.php"><i class="fa fa-dashboard"></i> Status</a>
+                        <a href="home.php"><i class="fa fa-dashboard"></i> Estatus</a>
                     </li>
                     <li>
-                        <a  href="messages.php"><i class="fa fa-desktop"></i> News Letters</a>
+                        <a  href="messages.php"><i class="fa fa-desktop"></i> Boletin informativo</a>
                     </li>
 					<li>
-                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Room Booking</a>
+                        <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Reserva de habitacion</a>
                     </li>
                     <li>
-                        <a  href="payment.php"><i class="fa fa-qrcode"></i> Payment</a>
+                        <a  href="payment.php"><i class="fa fa-qrcode"></i> Pago</a>
                     </li>
 					 <li>
-                        <a class="active-menu" href="profit.php"><i class="fa fa-qrcode"></i> Profit</a>
+                        <a class="active-menu" href="profit.php"><i class="fa fa-qrcode"></i> Lucro</a>
                     </li>
                     
                     <li>
-                        <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <a href="logout.php" ><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
                     </li>
                     
 
@@ -99,7 +99,7 @@ if(!isset($_SESSION["user"]))
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           Profit Details<small> </small>
+                        Detalles de beneficios <small> </small>
                         </h1>
                     </div>
                 </div> 
@@ -140,14 +140,14 @@ if(!isset($_SESSION["user"]))
                                     <thead>
                                         <tr>
 											<th>ID</th>
-                                            <th>Name</th>
-                                            <th>Check in</th>
-											<th>Check out</th>
-                                            <th>Room Rent</th>
-											<th>Bed Rent</th>
-											<th>Meals </th>
+                                            <th>Nombre</th>
+                                            <th>Registrarse</th>
+											<th>Verificar</th>
+                                            <th>Alquiler de la habitación</th>
+											<th>Alquiler de cama</th>
+											<th>Comidas </th>
 											<th>Gr.Total</th>
-											<th>Profit</th>
+											<th>Lucro</th>
 											
                                             
                                         </tr>

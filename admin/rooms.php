@@ -9,16 +9,16 @@
 			<form action="" id="manage-room">
 				<div class="card">
 					<div class="card-header">
-						    Room Form
+					Forma de la habitación
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
 							<div class="form-group">
-								<label class="control-label">Room</label>
+								<label class="control-label">Habitacion</label>
 								<input type="text" class="form-control" name="room">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Category</label>
+								<label class="control-label">Categoria</label>
 								<select class="custom-select browser-default" name="category_id">
 									<?php 
 									$cat = $conn->query("SELECT * FROM room_categories order by name asc ");
@@ -32,10 +32,10 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="" class="control-label">Availability</label>
+								<label for="" class="control-label">Disponibilidad</label>
 								<select class="custom-select browser-default" name="status">
-									<option value="0">Available</option>
-									<option value="1">Unavailable</option>
+									<option value="0">Disponible</option>
+									<option value="1">Agotado</option>
 
 								</select>
 							</div>
@@ -44,8 +44,8 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
-								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()"> Cancel</button>
+								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Guardar</button>
+								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()"> Cancelar</button>
 							</div>
 						</div>
 					</div>
@@ -61,11 +61,11 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
-									<th class="text-center">Category</th>
-									<th class="text-center">Room</th>
-									<th class="text-center">Status</th>
-									<th class="text-center">Action</th>
+									<th class="text-center">Id</th>
+									<th class="text-center">Categoria</th>
+									<th class="text-center">Habitacion</th>
+									<th class="text-center">Estatus</th>
+									<th class="text-center">Accion</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -81,13 +81,13 @@
 									<td class="text-center"><?php echo $cat_name[$row['category_id']] ?></td>
 									<td class=""><?php echo $row['room'] ?></td>
 									<?php if($row['status'] == 0): ?>
-										<td class="text-center"><span class="badge badge-success">Available</span></td>
+										<td class="text-center"><span class="badge badge-success">Disponible</span></td>
 									<?php else: ?>
-										<td class="text-center"><span class="badge badge-default">Unavailable</span></td>
+										<td class="text-center"><span class="badge badge-default">Agotado</span></td>
 									<?php endif; ?>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-room="<?php echo $row['room'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-status="<?php echo $row['status'] ?>">Edit</button>
-										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
+										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-room="<?php echo $row['room'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-status="<?php echo $row['status'] ?>">Editar</button>
+										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Borrar</button>
 									</td>
 								</tr>
 								<?php endwhile; ?>
@@ -139,7 +139,7 @@
 		end_load()
 	})
 	$('.delete_cat').click(function(){
-		_conf("Are you sure to delete this room?","delete_cat",[$(this).attr('data-id')])
+		_conf("Estas Seguro de borrar esta Habitacion?","delete_cat",[$(this).attr('data-id')])
 	})
 	function delete_cat($id){
 		start_load()
@@ -149,7 +149,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Habitacio Borrada Exitosamente",'Exito')
 					setTimeout(function(){
 						location.reload()
 					},1500)

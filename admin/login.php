@@ -92,7 +92,7 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
   							<label for="password" class="control-label">Contraseña</label>
   							<input type="password" id="password" name="password" class="form-control">
   						</div>
-  						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Login</button></center>
+  						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Ingresar</button></center>
   					</form>
   				</div>
   			</div>
@@ -108,7 +108,7 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
 <script>
 	$('#login-form').submit(function(e){
 		e.preventDefault()
-		$('#login-form button[type="button"]').attr('disabled',true).html('Logging in...');
+		$('#login-form button[type="button"]').attr('disabled',true).html('Iniciando sesión...');
 		if($(this).find('.alert-danger').length > 0 )
 			$(this).find('.alert-danger').remove();
 		$.ajax({
@@ -124,9 +124,9 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
 				if(resp == 1){
 					location.href ='index.php?page=home';
 				}else if(resp == 2){
-					location.href ='voting.php';
+					location.href ='index.php?page=home';
 				}else{
-					$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
+					$('#login-form').prepend('<div class="alert alert-danger">El Usuario o Contraseña esta incorrecto.</div>')
 					$('#login-form button[type="button"]').removeAttr('disabled').html('Login');
 				}
 			}

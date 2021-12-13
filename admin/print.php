@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Invoice</title>
+		<title>Factura</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 		<script src="script.js"></script>
@@ -253,11 +253,11 @@ tr:hover .cut { opacity: 1; }
 	
 	?>
 		<header>
-			<h1>Invoice</h1>
+			<h1>Factura</h1>
 			<address >
-				<p>SUN RISE HOTEL,</p>
-				<p>New Kalmunani Road,<br>Battialoa,<br>Sri Lanka.</p>
-				<p>(+94) 65 222 44 55</p>
+				<p>HOTEL THE LINCES,</p>
+				<p>SI,<br>NO,<br>Grupo B</p>
+				<p>SIN NRO</p>
 			</address>
 			<span><img alt="" src="assets/img/sun.png"></span>
 		</header>
@@ -268,11 +268,11 @@ tr:hover .cut { opacity: 1; }
 			</address>
 			<table class="meta">
 				<tr>
-					<th><span >Invoice #</span></th>
+					<th><span >Factura </span></th>
 					<td><span ><?php echo $id; ?></span></td>
 				</tr>
 				<tr>
-					<th><span >Date</span></th>
+					<th><span >Fecha</span></th>
 					<td><span ><?php echo $cout; ?> </span></td>
 				</tr>
 				
@@ -281,10 +281,10 @@ tr:hover .cut { opacity: 1; }
 				<thead>
 					<tr>
 						<th><span >Item</span></th>
-						<th><span >No of Days</span></th>
-						<th><span >Rate</span></th>
-						<th><span >Quantity</span></th>
-						<th><span >Price</span></th>
+						<th><span >Nro de Dias</span></th>
+						<th><span >Calificar</span></th>
+						<th><span >Cantidad</span></th>
+						<th><span >Precio</span></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -296,7 +296,7 @@ tr:hover .cut { opacity: 1; }
 						<td><span data-prefix>$</span><span><?php echo $ttot; ?></span></td>
 					</tr>
 					<tr>
-						<td><span ><?php echo $bed; ?>  Bed </span></td>
+						<td><span ><?php echo $bed; ?>  Cama </span></td>
 						<td><span ><?php echo $days; ?></span></td>
 						<td><span data-prefix>$</span><span ><?php  echo $type_of_bed;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
@@ -315,22 +315,22 @@ tr:hover .cut { opacity: 1; }
 			<table class="balance">
 				<tr>
 					<th><span >Total</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix>S/</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 				<tr>
-					<th><span >Amount Paid</span></th>
-					<td><span data-prefix>$</span><span >0.00</span></td>
+					<th><span >Cantidad pagada</span></th>
+					<td><span data-prefix>S/</span><span >0.00</span></td>
 				</tr>
 				<tr>
-					<th><span >Balance Due</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<th><span >Saldo adeudado</span></th>
+					<td><span data-prefix>S/</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 			</table>
 		</article>
 		<aside>
-			<h1><span >Contact us</span></h1>
+			<h1><span >Contactenos</span></h1>
 			<div >
-				<p align="center">Email :- info@sunrise.com || Web :- www.sunrise.com || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email :- AunNo.com || Phone :- +51 nop </p>
 			</div>
 		</aside>
 	</body>
