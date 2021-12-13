@@ -34,7 +34,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d',strtot
 			        						</div>
 			        						<div class="col-md-3">
 			        							<br>
-			        							<button class="btn-btn-block btn-primary mt-3">Check Disponibilidad</button>
+			        							<button class="btn-btn-block btn-primary mt-3">Verificar Disponibilidad</button>
 			        						</div>
 
 			        					</div>

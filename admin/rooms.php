@@ -44,8 +44,8 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Guardar</button>
-								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()"> Cancelar</button>
+								<button class="btn btn-sm btn-primary col-sm-4 offset-md-3"> Guardar</button>
+								<button class="btn btn-sm btn-default col-sm-4" type="button" onclick="$('#manage-room').get(0).reset()"> Cancelar</button>
 							</div>
 						</div>
 					</div>
@@ -112,14 +112,14 @@
 			data: $(this).serialize(),
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully added",'success')
+					alert_toast("Datos agregados correctamente",'exito')
 					setTimeout(function(){
 						location.reload()
 					},1500)
 
 				}
 				else if(resp==2){
-					alert_toast("Data successfully updated",'success')
+					alert_toast("Datos actualizados correctamente",'Exito')
 					setTimeout(function(){
 						location.reload()
 					},1500)

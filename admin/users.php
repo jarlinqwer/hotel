@@ -6,7 +6,7 @@
 	
 	<div class="row">
 	<div class="col-lg-12">
-			<button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> New user</button>
+			<button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> Nuevo Usuario</button>
 	</div>
 	</div>
 	<br>
@@ -16,10 +16,10 @@
 				<table class="table-striped table-bordered col-md-12">
 			<thead>
 				<tr>
-					<th class="text-center">#</th>
-					<th class="text-center">Name</th>
-					<th class="text-center">Username</th>
-					<th class="text-center">Action</th>
+					<th class="text-center">Id</th>
+					<th class="text-center">Nombre</th>
+					<th class="text-center">Usuario</th>
+					<th class="text-center">Accion</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -42,14 +42,14 @@
 				 	<td>
 				 		<center>
 								<div class="btn-group">
-								  <button type="button" class="btn btn-primary">Action</button>
+								  <button type="button" class="btn btn-primary">Accion</button>
 								  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								    <span class="sr-only">Toggle Dropdown</span>
+								    <span class="sr-only">Alternar menú desplegable</span>
 								  </button>
 								  <div class="dropdown-menu">
-								    <a class="dropdown-item edit_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Edit</a>
+								    <a class="dropdown-item edit_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Editar</a>
 								    <div class="dropdown-divider"></div>
-								    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Delete</a>
+								    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Borrar</a>
 								  </div>
 								</div>
 								</center>
@@ -66,10 +66,10 @@
 <script>
 	
 $('#new_user').click(function(){
-	uni_modal('New User','manage_user.php')
+	uni_modal('Nuevo Usuario','manage_user.php')
 })
 $('.edit_user').click(function(){
-	uni_modal('Edit User','manage_user.php?id='+$(this).attr('data-id'))
+	uni_modal('Editar Usuario','manage_user.php?id='+$(this).attr('data-id'))
 })
 
 </script>

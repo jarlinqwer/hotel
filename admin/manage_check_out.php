@@ -59,7 +59,7 @@ if($_GET['id']){
 		
 	})
 	$('#edit_checkin').click(function(){
-		uni_modal("Edit Check In","manage_check_in.php?id=<?php echo $id ?>&rid=<?php echo $room_id ?>")
+		uni_modal("Editar registro","manage_check_in.php?id=<?php echo $id ?>&rid=<?php echo $room_id ?>")
 	})
 	$('#checkout').click(function(){
 		start_load()
@@ -69,7 +69,7 @@ if($_GET['id']){
 			data:{id:'<?php echo $id ?>',rid:'<?php echo $room_id ?>'},
 			success:function(resp){
 				if(resp ==1){
-					alert_toast("Data successfully saved",'success')
+					alert_toast("Datos Guardados exitosamente",'exito')
 					setTimeout(function(){
 						location.reload()
 					},1500)

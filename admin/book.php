@@ -44,7 +44,7 @@ $calc_days = abs(strtotime($_GET['out']) - strtotime($_GET['in'])) ;
 			data:$(this).serialize(),
 			success:function(resp){
 				if(resp >0){
-					alert_toast("Data successfully saved",'success')
+					alert_toast("Datos Guardados exitosamente",'Exito')
 					setTimeout(function(){
 					end_load()
 					$('.modal').modal('hide')

@@ -12,7 +12,7 @@ ob_start();
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+    <title>HOTEL THE LINCES</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -63,7 +63,7 @@ ob_start();
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="settings.php"><i class="fa fa-dashboard"></i>User Dashboard</a>
+                        <a class="active-menu" href="settings.php"><i class="fa fa-dashboard"></i>Tablero de mandos</a>
                     </li>
 					
 					
@@ -79,7 +79,7 @@ ob_start();
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           ADMINISTRATOR<small> accounts </small>
+                           ADMINISTRADOR<small> Cuentas </small>
                         </h1>
                     </div>
                 </div> 
@@ -100,12 +100,12 @@ ob_start();
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>User ID</th>
-											<th>User name</th>
-                                            <th>Password</th>
+                                            <th>ID</th>
+											<th>Usuario</th>
+                                            <th>Contraseña</th>
                                             
-											<th>Update</th>
-											<th>Remove</th>
+											<th>Actializar</th>
+											<th>Borrar</th>
                                             
                                         </tr>
                                     </thead>
@@ -128,7 +128,7 @@ ob_start();
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
 															 Update 
 													</button></td>
-													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete</button></td>
+													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Borrar</button></td>
 												</tr>";
 											}
 											else
@@ -139,9 +139,9 @@ ob_start();
 													<td>".$ps."</td>
 													
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-                              Update 
+                              Actualizar 
                             </button></td>
-													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Delete</button></td>
+													<td><a href=usersettingdel.php?eid=".$id ." <button class='btn btn-danger'> <i class='fa fa-edit' ></i> Borrar</button></td>
 												</tr>";
 											
 											}
@@ -166,26 +166,26 @@ ob_start();
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Add the User name and Password</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Agregar Usuario y Contraseña</h4>
                                         </div>
 										<form method="post">
                                         <div class="modal-body">
                                             <div class="form-group">
-                                            <label>Add new User name</label>
-                                            <input name="newus"  class="form-control" placeholder="Enter User name">
+                                            <label>Nuevo Usuario</label>
+                                            <input name="newus"  class="form-control" placeholder="Usuario">
 											</div>
 										</div>
 										<div class="modal-body">
                                             <div class="form-group">
-                                            <label>New Password</label>
-                                            <input name="newps"  class="form-control" placeholder="Enter Password">
+                                            <label> Nueva Contraseña</label>
+                                            <input name="newps"  class="form-control" placeholder="Contraseña">
 											</div>
                                         </div>
 										
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 											
-                                           <input type="submit" name="in" value="Add" class="btn btn-primary">
+                                           <input type="submit" name="in" value="Agregar" class="btn btn-primary">
 										  </form>
 										   
                                         </div>
@@ -202,7 +202,7 @@ ob_start();
 							$newsql ="Insert into login (usname,pass) values ('$newus','$newps')";
 							if(mysqli_query($con,$newsql))
 							{
-							echo' <script language="javascript" type="text/javascript"> alert("User name and password Added") </script>';
+							echo' <script language="javascript" type="text/javascript"> alert("Usuario y Contraseña Agregados") </script>';
 							
 						
 							}
@@ -217,26 +217,26 @@ ob_start();
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Change the User name and Password</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Cambiar Usuario y Contraseña</h4>
                                         </div>
 										<form method="post">
                                         <div class="modal-body">
                                             <div class="form-group">
-                                            <label>Change User name</label>
-                                            <input name="usname" value="<?php echo $us; ?>" class="form-control" placeholder="Enter User name">
+                                            <label>Cambiar Usuario</label>
+                                            <input name="usname" value="<?php echo $us; ?>" class="form-control" placeholder="Ingrese Usuario">
 											</div>
 										</div>
 										<div class="modal-body">
                                             <div class="form-group">
-                                            <label>Change Password</label>
-                                            <input name="pasd" value="<?php echo $ps; ?>" class="form-control" placeholder="Enter Password">
+                                            <label>Cambiar Contraseña</label>
+                                            <input name="pasd" value="<?php echo $ps; ?>" class="form-control" placeholder="Ingrese Contraseña">
 											</div>
                                         </div>
 										
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
 											
-                                           <input type="submit" name="up" value="Update" class="btn btn-primary">
+                                           <input type="submit" name="up" value="Actualizar" class="btn btn-primary">
 										  </form>
 										   
                                         </div>
@@ -257,7 +257,7 @@ ob_start();
 					$upsql = "UPDATE `login` SET `usname`='$usname',`pass`='$passwr' WHERE id = '$id'";
 					if(mysqli_query($con,$upsql))
 					{
-					echo' <script language="javascript" type="text/javascript"> alert("User name and password update") </script>';
+					echo' <script language="javascript" type="text/javascript"> alert("Usuario y Contraseña Agregada") </script>';
 					
 				
 					}
