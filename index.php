@@ -448,3 +448,43 @@ e</h4>
 	</div>
 </section>
 <!-- /contact -->
+<div class="copy">
+		        <p>© 2021  <a href="index.php">LOS LINCES</a> </p>
+		    </div>
+<!--/footer -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- contact form -->
+<script src="js/jqBootstrapValidation.js"></script>
+
+<!-- /contact form -->	
+<!-- Calendar -->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+				$(function() {
+				$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+				});
+		</script>
+<!-- //Calendar -->
+<!-- gallery popup -->
+<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+<!-- //gallery popup -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- flexSlider -->
