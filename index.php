@@ -122,4 +122,98 @@ include('db.php');
 					<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
 				</a>
 			</div>
-	</div>	
+	</div>
+	<!-- //banner --> 
+<!--//Header-->
+<!-- //Modal1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+						<!-- Modal1 -->
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4>LOS<span> LINCES</span></h4>
+										<img src="images/1.jpg" alt=" " class="img-responsive">
+										<h5>Sabemos lo que amas</h5>
+										<p>Ofrecer a los huéspedes vistas únicas y encantadoras desde sus habitaciones con sus comodidades excepcionales, hace que Star Hotel sea uno de los mejores en su tipo. Pruebe nuestro menú de comida, servicios increíbles y un personal amable mientras esté aquí..</p>
+									</div>
+								</div>
+							</div>
+						</div>
+<!-- //Modal1 -->
+<div id="availability-agileits">
+<div class="col-md-12 book-form-left-w3layouts">
+	<a href="admin/reservation.php"><h2>RESERVA DE HABITACIÓN
+</h2></a>
+</div>
+
+			<div class="clearfix"> </div>
+</div>
+<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">	
+			<div class="agileits_banner_bottom">
+				<h3><span>Experimenta una buena estadía, disfruta de fantásticas ofertas</span> Encuentra nuestra acogedora bienvenida</h3>
+			</div>
+			<div class="w3ls_banner_bottom_grids">
+				<ul class="cbp-ig-grid">
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_road"></span>
+							<h4 class="cbp-ig-title">DORMITORIOS PRINCIPALES
+</h4>
+							<span class="cbp-ig-category">LOS LINCES</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_cube"></span>
+							<h4 class="cbp-ig-title">BALCON CON VISTA AL MAR</h4>
+							<span class="cbp-ig-category">LOS LINCES</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_users"></span>
+							<h4 class="cbp-ig-title">GRAN CAFE
+</h4>
+							<span class="cbp-ig-category">LOS LINCES</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="cbp-ig-icon w3_ticket"></span>
+							<h4 class="cbp-ig-title">COBERTURA WIFI</h4>
+							<span class="cbp-ig-category">LOS LINCES
+</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- /about -->
+ 	<div class="about-wthree" id="about">
+		  <div class="container">
+				   <div class="ab-w3l-spa">
+                            <h3 class="title-w3-agileits title-black-wthree">Acerca de nosotros
+</h3> 
+						   <p class="about-para-w3ls"> Hotel "The Linces" sabemos que un ambiente ideal para los negocios de nuestros clientes es parte de su éxito, por este motivo le ofrecemos un lugar donde la elegancia, el confort y la modernidad se complementan con un trato personalizado y un servicio de primera que harán de su estadía la clave de su éxito.
+</p>
+						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
+										<div class="w3l-slider-img">
+											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
+										</div>
+                                       <div class="w3ls-info-about">
+										    <h4>Te encantarán todas las comodidades que ofrecemos
+!</h4>
+											<p>que espero disfruta de tus vaciones con nosotros. </p>
+										</div>
+		          </div>
+		   	<div class="clearfix"> </div>
+    </div>
+</div>
+ 	<!-- //about -->
+<!--sevices-->	
