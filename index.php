@@ -35,7 +35,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=list">HABITACIONES</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?page=about">ACERCA DE</a></li>
                     </ul>
-                </div>
+                </div>  
             </div>
         </nav>
        
