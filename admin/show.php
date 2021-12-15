@@ -199,9 +199,9 @@
 			<h1>Información de Huésped
 </h1>
 			<address >
-				<p> HOTEL LINCES</p>
-				<p>New Kalmunani Road,<br>Batusai,<br>Sri Lanka.</p>
-				<p>(+94) 65 222 44 55</p>
+				<p> HOTEL LOS LINCES</p>
+				<p>Cusco,Santiago<br></p>
+				<p>(+51) 989703946</p>
 			</address>
 			<span><img alt="" src="assets/img/los linces.png"></span>
 		</header>
