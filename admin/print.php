@@ -196,29 +196,29 @@ tr:hover .cut { opacity: 1; }
 	}
 	
 									$type_of_room = 0;       
-									if($troom=="Superior Room")
+									if($troom=="HABITACION SUPERIOR")
 									{
 										$type_of_room = 320;
 									
 									}
-									else if($troom=="Deluxe Room")
+									else if($troom=="HABITACION DE LUJO")
 									{
 										$type_of_room = 220;
 									}
-									else if($troom=="Guest House")
+									else if($troom=="CASA DE HUESPEDES")
 									{
 										$type_of_room = 180;
 									}
-									else if($troom=="Single Room")
+									else if($troom=="HABITACION INDIVIDUAL")
 									{
 										$type_of_room = 150;
 									}
 									
-									if($bed=="Single")
+									if($bed=="Simple")
 									{
 										$type_of_bed = $type_of_room * 1/100;
 									}
-									else if($bed=="Double")
+									else if($bed=="Doble")
 									{
 										$type_of_bed = $type_of_room * 2/100;
 									}
@@ -226,27 +226,27 @@ tr:hover .cut { opacity: 1; }
 									{
 										$type_of_bed = $type_of_room * 3/100;
 									}
-									else if($bed=="Quad")
+									else if($bed=="Cuadruple")
 									{
 										$type_of_bed = $type_of_room * 4/100;
 									}
-									else if($bed=="None")
+									else if($bed=="Ninguna")
 									{
 										$type_of_bed = $type_of_room * 0/100;
 									}
 									
-									if($meal=="Room only")
+									if($meal=="Solo Habitacion")
 									{
 										$type_of_meal=$type_of_bed * 0;
 									}
-									else if($meal=="Breakfast")
+									else if($meal=="Desayuno")
 									{
 										$type_of_meal=$type_of_bed * 2;
-									}else if($meal=="Half Board")
+									}else if($meal=="Media Pizarra")
 									{
 										$type_of_meal=$type_of_bed * 3;
 									
-									}else if($meal=="Full Board")
+									}else if($meal=="Pension Completa")
 									{
 										$type_of_meal=$type_of_bed * 4;
 									}
@@ -291,23 +291,23 @@ tr:hover .cut { opacity: 1; }
 					<tr>
 						<td><span ><?php echo $troom; ?></span></td>
 						<td><span ><?php echo $days; ?> </span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_room;?></span></td>
+						<td><span data-prefix>S/.</span><span ><?php  echo $type_of_room;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $ttot; ?></span></td>
+						<td><span data-prefix>S/.</span><span><?php echo $ttot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $bed; ?>  Cama </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_bed;?></span></td>
+						<td><span data-prefix>S/.</span><span ><?php  echo $type_of_bed;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $btot; ?></span></td>
+						<td><span data-prefix>S/.</span><span><?php echo $btot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $meal; ?>  </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_meal?></span></td>
+						<td><span data-prefix>S/.</span><span ><?php  echo $type_of_meal?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $mepr; ?></span></td>
+						<td><span data-prefix>S/.</span><span><?php echo $mepr; ?></span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -315,16 +315,16 @@ tr:hover .cut { opacity: 1; }
 			<table class="balance">
 				<tr>
 					<th><span >Total</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix>S/.</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 				<tr>
 					<th><span >	Cantidad pagada
 </span></th>
-					<td><span data-prefix>$</span><span >0.00</span></td>
+					<td><span data-prefix>S/.</span><span >0.00</span></td>
 				</tr>
 				<tr>
 					<th><span >Saldo adeudado</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix>S/.</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 			</table>
 		</article>

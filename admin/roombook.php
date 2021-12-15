@@ -22,6 +22,8 @@ if(!isset($_SESSION["user"]))
 				$re = mysqli_query($con,$sql);
 				while($row=mysqli_fetch_array($re))
 				{
+						
+
 					$title = $row['Title'];
 					$fname = $row['FName'];
 					$lname = $row['LName'];
@@ -484,20 +486,20 @@ Confirmación de reserva
 												//echo "<script type='text/javascript'> alert('Guest Room booking is conform')</script>";
 												//echo "<script type='text/javascript'> window.location='home.php'</script>";
 												 $type_of_room = 0;       
-														if($troom=="Superior Room")
+														if($troom=="HABITACION SUPERIOR")
 														{
 															$type_of_room = 320;
 														
 														}
-														else if($troom=="Deluxe Room")
+														else if($troom=="HABITACION DE LUJO")
 														{
 															$type_of_room = 220;
 														}
-														else if($troom=="Guest House")
+														else if($troom=="CASA DE HUESPEDES")
 														{
 															$type_of_room = 180;
 														}
-														else if($troom=="Single Room")
+														else if($troom=="HABITACION INDIVIDUAL")
 														{
 															$type_of_room = 150;
 														}
@@ -505,11 +507,11 @@ Confirmación de reserva
 														
 														
 														
-														if($bed=="Single")
+														if($bed=="Simple")
 														{
 															$type_of_bed = $type_of_room * 1/100;
 														}
-														else if($bed=="Double")
+														else if($bed=="Doble")
 														{
 															$type_of_bed = $type_of_room * 2/100;
 														}
@@ -517,28 +519,28 @@ Confirmación de reserva
 														{
 															$type_of_bed = $type_of_room * 3/100;
 														}
-														else if($bed=="Quad")
+														else if($bed=="Cuadruple")
 														{
 															$type_of_bed = $type_of_room * 4/100;
 														}
-														else if($bed=="None")
+														else if($bed=="Ninguna")
 														{
 															$type_of_bed = $type_of_room * 0/100;
 														}
 														
 														
-														if($meal=="Room only")
+														if($meal=="Solo Habitacion")
 														{
 															$type_of_meal=$type_of_bed * 0;
 														}
-														else if($meal=="Breakfast")
+														else if($meal=="Desayuno")
 														{
 															$type_of_meal=$type_of_bed * 2;
-														}else if($meal=="Half Board")
+														}else if($meal=="Media Pizarra")
 														{
 															$type_of_meal=$type_of_bed * 3;
 														
-														}else if($meal=="Full Board")
+														}else if($meal=="Pension Completa")
 														{
 															$type_of_meal=$type_of_bed * 4;
 														}

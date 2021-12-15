@@ -131,10 +131,10 @@ INFORMACION PERSONAL
                                             <label>Tipo de habitación*</label>
                                             <select name="troom"  class="form-control" required>
 												<option value selected ></option>
-                                                <option value="HABITACIÓN SUPERIOR">  HABITACIÓN SUPERIOR</option>
-                                                <option value="HABITACIÓN DE LUJO">HABITACIÓN DE LUJO</option>
+                                                <option value="HABITACION SUPERIOR">  HABITACIÓN SUPERIOR</option>
+                                                <option value="HABITACION DE LUJO">HABITACIÓN DE LUJO</option>
 												<option value="CASA DE HUESPEDES">CASA DE HUESPEDES</option>
-												<option value="HABITACIÓN INDIVIDUAL">HABITACIÓN INDIVIDUAL</option>
+												<option value="HABITACION INDIVIDUAL">HABITACIÓN INDIVIDUAL</option>
                                             </select>
                               </div>
 							  <div class="form-group">
@@ -142,11 +142,11 @@ INFORMACION PERSONAL
 </label>
                                             <select name="bed" class="form-control" required>
 												<option value selected ></option>
-                                                <option value="Single">Simple</option>
-                                                <option value="Double">Doble</option>
+                                                <option value="Simple">Simple</option>
+                                                <option value="Doble">Doble</option>
 												<option value="Triple">Triple</option>
-                                                <option value="Quad">Cuadruple</option>
-												<option value="None">Ninguna</option>
+                                                <option value="Cuadruple">Cuadruple</option>
+												<option value="Ninguna">Ninguna</option>
                                                 
                                              
                                             </select>
@@ -173,11 +173,11 @@ INFORMACION PERSONAL
                                             <label>Régimen de comidas</label>
                                             <select name="meal" class="form-control"required>
 												<option value selected ></option>
-                                                <option value="Room only">Sólo habitación
+                                                <option value="Solo Habitacion">Sólo habitación
 </option>
-                                                <option value="Breakfast">Desayuno</option>
-												<option value="Half Board">Madia pizarra</option>
-												<option value="Full Board">Pensión completa</option>
+                                                <option value="Desayuno">Desayuno</option>
+												<option value="Media Pizarra">Madia pizarra</option>
+												<option value="Pension Completa">Pensión completa</option>
 												
                                                 
                                              
